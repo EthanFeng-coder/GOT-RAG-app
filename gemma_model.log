@@ -1,0 +1,8 @@
+2024-10-21 12:23:55,326:INFO:Data loaded successfully.
+2024-10-21 12:23:55,326:INFO:X shape: (1949, 8)
+2024-10-21 12:23:55,326:INFO:y shape: (1949,)
+2024-10-21 12:23:55,362:INFO:Data split into training and test sets.
+2024-10-21 12:23:55,362:INFO:X_train shape: (1559,)
+2024-10-21 12:23:55,362:INFO:X_test shape: (390,)
+2024-10-21 12:23:55,362:INFO:y_train shape: (1559,)
+2024-10-21 12:23:55,362:INFO:y_test shape: (390,)
