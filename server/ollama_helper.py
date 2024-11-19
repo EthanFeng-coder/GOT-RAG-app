@@ -2,7 +2,7 @@ import requests
 import json
 hosturl = "192.168.8.143"
 def generate_answer_with_ollama(user_query, context):
-    ollama_url = f"http://{hosturl}:11434/api/generate"
+    ollama_url = f"http://{hosturl}:11435/api/generate"
     prompt = f"Context: {context}\n\nUser question: {user_query}\n\nAnswer based on the context and try to provide the reference list"
     payload = {
         "model": "llama3.1:latest",

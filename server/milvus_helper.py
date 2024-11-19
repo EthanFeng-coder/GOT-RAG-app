@@ -8,7 +8,7 @@ collection = Collection(name=collection_name)
 collection.load()
 hosturl = "192.168.8.143"
 def embed_text(text):
-    url = f"http://{hosturl}:11434/api/embeddings"
+    url = f"http://{hosturl}:11435/api/embeddings"
     payload = {
         "model": "mxbai-embed-large:latest",
         "prompt": text

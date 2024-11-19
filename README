@@ -1,7 +1,10 @@
-require miluvs docker ollama
 #build
 docker build -t gotapp /home/ef/GOTsprider/server
 #run the docker container
 docker run -d --name gotapp --network milvus_network -p 9000:9000 -v /home/ef/GOTsprider/server:/app gotapp tail -f /dev/null
 #start it
-uvicorn main:app --host 0.0.0.0 --port 9000 --reload
+nohup uvicorn main:app --host 0.0.0.0 --port 9000 --reload > err.log 2>&1 &
+#create a link in between unicorn docker and milvus
+#nohup this to export the ollama local services
+nohup socat TCP-LISTEN:11435,fork TCP:127.0.0.1:11434 >test.log 2>&1 &
+

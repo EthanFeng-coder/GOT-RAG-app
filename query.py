@@ -129,5 +129,5 @@ def query_and_generate_answer(user_query, limit=5):
         print("No relevant context found to generate an answer.")
 
 # Example user query
-user_query = ("who is The Barristan Selmy")
+user_query = ("explain the battle of the Ninepenny Kings")
 query_and_generate_answer(user_query, limit=3)
